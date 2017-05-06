@@ -1,0 +1,61 @@
+ext {
+    guavaVersion = "18.0"
+    swaggerVersion = "2.4.0"
+    logbackVersion = "1.1.11"
+    libs = [
+            online : [
+//                    "org.springframework.cloud:spring-cloud-stream-binder-rabbit",
+                    "org.springframework.boot:spring-boot-starter-web",
+                    "org.springframework.boot:spring-boot-starter-actuator",
+//                    "org.springframework.cloud:spring-cloud-starter-feign",
+                    "org.springframework.cloud:spring-cloud-starter-eureka",
+//                    "org.springframework.cloud:spring-cloud-starter-hystrix",
+//                    "org.springframework.cloud:spring-cloud-starter-sleuth",
+//                    "org.springframework.cloud:spring-cloud-starter-zipkin",
+                    "net.logstash.logback:logstash-logback-encoder:4.7",
+                    "io.springfox:springfox-swagger-ui:${swaggerVersion}"
+            ],
+//
+//            offline: [
+//                    "org.springframework.boot:spring-boot-starter-web",
+//                    "org.springframework.boot:spring-boot-starter-actuator",
+//                    "org.springframework.cloud:spring-cloud-starter-feign",
+//                    "org.springframework.cloud:spring-cloud-starter-hystrix"
+//            ],
+
+            util   : [
+//                    "com.google.guava:guava:${guavaVersion}",
+//                    "com.thoughtworks.xstream:xstream:1.4.9",
+//                    "org.apache.poi:poi:3.9",
+//                    "com.ibm.icu:icu4j:58.2",
+//                    "dom4j:dom4j:1.6.1",
+//                    "com.alibaba:fastjson:1.2.22",
+//                    "org.apache.commons:commons-collections4:4.0",
+                    "io.springfox:springfox-swagger2:${swaggerVersion}",
+//                    "ch.qos.logback:logback-classic:${logbackVersion}",
+//                    "ch.qos.logback:logback-core:${logbackVersion}",
+//                    "org.apache.commons:commons-lang3:3.4",
+//                    "org.togglz:togglz-spring-boot-starter:2.4.1.Final",
+//                    "org.togglz:togglz-console:2.4.1.Final",
+//                    "org.togglz:togglz-mongodb:2.4.1.Final",
+//                    "org.springframework.data:spring-data-mongodb",
+//                    'org.springframework.boot:spring-boot-starter-data-mongodb'
+            ],
+
+            test   : [
+                    "org.springframework.boot:spring-boot-starter-test",
+                    'junit:junit:4.11',
+                    'org.hamcrest:hamcrest-library:1.3'
+
+//                    "org.easytesting:fest-assert-core:2.0M10",
+//                    "org.togglz:togglz-junit:2.4.1.Final",
+//                    "com.jayway.restassured:rest-assured:2.9.0",
+//                    "com.jayway.restassured:spring-mock-mvc:2.9.0",
+//                    "org.springframework.restdocs:spring-restdocs-mockmvc",
+//                    "org.assertj:assertj-core:3.5.2"
+            ]
+
+    ]
+}
+
+
