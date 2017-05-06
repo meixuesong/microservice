@@ -5,10 +5,7 @@ buildscript {
 
     repositories {
         mavenLocal()
-
-        maven {
-            url "http://10.38.34.20:8081/nexus/content/groups/public/"
-        }
+        mavenCentral()
     }
 
     dependencies {
@@ -54,10 +51,7 @@ dependencies {
 
 repositories {
     mavenLocal()
-
-    maven {
-        url "http://10.38.34.20:8081/nexus/content/groups/public/"
-    }
+    mavenCentral()
 }
 
 checkstyle {
